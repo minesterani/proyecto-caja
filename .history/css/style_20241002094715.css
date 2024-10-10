@@ -1,0 +1,416 @@
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    background-color: rgb(105, 103, 103);
+    width: 100%;
+    height: 80px;
+    font-size: 40px;
+    color: aliceblue;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+.subtitulo{
+    font-size: 14px;
+    color: aliceblue;
+    margin: 0;
+    padding-top: 5px;
+}
+header .header-tienda h1 {
+    font-size: 36px;
+    color: aliceblue;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: 400;
+    margin: 0; /* Elimina márgenes para evitar espacios extra */
+}
+
+.header-tienda .subtitulo{
+    font-size: 14px; /* Tamaño más pequeño */
+    color: aliceblue;
+    margin-top: 5px; /* Ajuste del margen para que esté cerca del h1 */
+    padding: 0;
+}
+
+
+/* Header */
+.header-index, .header-tienda, .header-catalogo, .header-contactos, .header-nosotros {
+    display: flex;
+    background-color: rgb(105, 103, 103);
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+
+    
+}
+.header-index nav {
+    
+   margin-top: 20px; /* Añadir espacio entre el título/párrafo y la barra de navegación */
+    }
+
+/* Navegación */
+nav{
+    margin-left: auto;
+}
+.navBar, .navtienda, .nav-catalogo, .nav-Contactos, .navNos {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.navBar li a, .navtienda li a, .nav-catalogo li a, .nav-Contactos li a, .navNos li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+/* Sección Principal */
+.section-principal {
+    background-color: lightblue;
+    width: 100%;
+    height: 25rem;
+    background-image: url("../assets/img/mercedes gris.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Botón */
+.boton {
+    background-color: white;
+    font-size: 1.25rem;
+    padding: 10px 10px 5px 14px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    position: fixed;
+    margin: 10px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 8 columnas iguales */
+    gap: 10px; /* Espacio entre las imágenes */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.grid img {
+    width: 100%;
+    height: 200px; /* Ajusta la altura según sea necesario */
+    object-fit: cover; /* Las imágenes se ajustarán sin deformarse */
+}
+
+/* Sección de Contactos */
+.section-contactos, .section-tienda, .section-catalogos, .section-nosotros {
+    background-color: lightblue;
+    width: 100%;
+    height: 25rem;
+    background-image: url("../assets/img/mercedes gris.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+.section-nosotros {
+    position: relative;
+    padding: 50px;
+    background-image: url("../assets/img/mercedes\ gris.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    color: white;
+    font-family: "Quattrocento Sans", sans-serif;
+    height: auto;
+}
+
+.container-nosotros {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.texto-nosotros {
+    width: 55%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: white;
+    overflow: hidden;
+}
+
+.texto-nosotros h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.texto-nosotros p {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.imagenes-nosotros {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.imagenes-nosotros img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    overflow: hidden;
+    
+}
+.section-tienda {
+    background-color: lightblue;
+    width: 100%; /* Ajusta el ancho según sea necesario */
+    height: 50rem; /* Aumenta la altura del contenedor */
+    padding: 20px;
+    background-image: url("../assets/img/mercedes gris.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+.contenedor-tienda {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las fotos */
+    padding: 20px;
+}
+
+/* Sección Contactos */
+.section-contactos {
+    background-color: lightblue;
+    width: 100%;
+    padding: 50px 20px;
+    background-image: url("../assets/img/mercedes gris.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9; /* Aumenta la opacidad para mejor visibilidad */
+    color: black;
+    height: auto; /* Altura automática según contenido */
+}
+
+.container-contactos {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    gap: 20px; /* Espacio entre el mapa y los datos */
+}
+
+.mapa {
+    flex: 1;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 400px; /* Ajusta la altura según lo necesites */
+    border: none;
+}
+
+.datos-empresa {
+    flex: 1;
+    padding-left: 20px; /* Espacio a la izquierda de los datos */
+    font-size: 1.25rem;
+}
+
+.datos-empresa h3 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.datos-empresa p {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Footer */
+.footer-content {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 0;
+    clear: both;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0;
+    padding: 20px 0;
+}
+
+.left-column, .right-column {
+    width: 48%;
+}
+
+.left-column iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+.right-column {
+    padding-left: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.right-column h3, .right-column p {
+    margin: 10px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+/* Estilos específicos para WhatsApp */
+.whatsapp, .whatsapp-contactos, .whatsapp-tienda, .whatsapp-nosotros, .whatsapp-catalogo {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Media Queries */
+@media(max-width: 1024px) {
+    .header-index, .header-tienda {
+        justify-content: space-around;
+    }
+}
+
+@media(max-width: 768px) {
+    h1 {
+        background-color: rgba(197, 193, 193, 0.555);
+        height: 80px;
+        font-size: 40px;
+        padding: 10px;
+    }
+
+    .header-index, .header-tienda, .header-catalogo, .header-contactos, .header-nosotros {
+        flex-direction: column;
+        background-color: gray;
+        font-size: 30px;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .navBar, .navtienda, .nav-catalogo, .nav-Contactos, .navNos {
+        padding-bottom: .875rem;
+    }
+
+    .navBar li a, .navtienda li a, .nav-catalogo li a, .nav-Contactos li a, .navNos li a {
+        font-size: 1.5rem;
+    }
+
+    .section-principal, .section-tienda, .section-catalogos, .section-contactos, .section-nosotros {
+        background-image: url("../assets/img/caja 2.jpg");
+        background-size: 100% 100%;
+    }
+
+    .container-nosotros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagenes-nosotros {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .imagenes-nosotros img {
+        max-height: 300px;
+    }
+
+    .texto-nosotros {
+        width: 100%;
+        text-align: center;
+    }
+    .mapa, .datos-empresa {
+        width: 100%;
+        padding: 0;
+    }
+
+    .datos-empresa {
+        padding-left: 0;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 1.2rem; /* Mantiene el tamaño de fuente aumentado */
+    }
+
+}
+
+@media(max-width: 425px) {
+    .navBar, .navtienda, .nav-catalogo, .nav-Contactos, .navNos {
+        flex-direction: column;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 200px;
+        grid-template-areas:
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6"
+            "img7"
+            "img8";
+    }
+
+    .grid img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+        padding: 0;
+    }
+
+    .right-column {
+        padding-top: 20px;
+    }
+}
